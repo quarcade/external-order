@@ -1,0 +1,20 @@
+<?php
+/**
+ * @author Quarcade
+ */
+?>
+
+<?php /** @var $block \Quarcade\ExternalOrder\Block\Sales\Order\Info\ExternalOrder */ ?>
+<?php $_order = $block->getOrder() ?>
+
+<div class="block">
+  <div class="block-content">
+    <div class="box box-order-external-order">
+      <strong class="box-title"><span><?php /* @escapeNotVerified */ echo __('External Order') ?></span></strong>
+      <div class="box-content">
+        <span class="order-external-order"><?php echo __('External Order Id') ?>:
+            <?php /* @escapeNotVerified */ echo $_order->getExternalOrderId() ?></span>
+      </div>
+    </div>
+  </div>
+</div>

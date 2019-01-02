@@ -1,0 +1,13 @@
+<?php
+/**
+ * @author Quarcade
+ */
+?>
+
+<?php /** @var $block \Quarcade\ExternalOrder\Block\Sales\Adminhtml\Order\View\ExternalOrder */ ?>
+<?php $_order = $block->getOrder() ?>
+
+<tr>
+    <th><?php /* @escapeNotVerified */ echo __('External Order Id') ?></th>
+    <td><span id="external_order_id"><?php /* @escapeNotVerified */ echo $_order->getExternalOrderId() ?></span></td>
+</tr>

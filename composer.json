@@ -1,0 +1,28 @@
+{
+  "name": "quarcade/external-order",
+  "description": "A Magento 2 module that adds external order id field to Magento order.",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Quarcade Paweł Pierzchała",
+      "email": "pawel.pierzchala@outlook.com"
+    }
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/framework": "~100.1.6"
+  },
+  "extra": {
+    "map": [
+      [
+        "*",
+        "Quarcade/ExternalOrder/"
+      ]
+    ]
+  }
+}
